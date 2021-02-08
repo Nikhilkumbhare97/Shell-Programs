@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-read -p "Enter Number :" n
+read -p  "Enter Number :" n
 
 for (( num=1; num<=$n; num++ ))
 do
