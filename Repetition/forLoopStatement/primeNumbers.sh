@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 echo "For Prime Number In Some Range"
 read -p "Enter Start Number :" n1
