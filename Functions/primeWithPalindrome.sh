@@ -15,9 +15,24 @@ function palindrome(){
                 echo Number $n is a prime and its Palindrome is also Prime
         elif [ $number -ne $reverse -a $number -gt 0 ]
         then
-		echo Number $n is a Prime but its Palindrome is not a Prime
-	else
-		echo Number is Not a Prime Number
+					number1=0
+					for (( num=1; num<=$reverse; num++ ))
+					do
+   				if [ $(($reverse%$num)) -eq 0 ]
+   				then
+      			((number1++))
+   				fi
+					done
+
+					if [ $number1 -eq 2 ]
+					then
+		               echo Number $n is a prime and its Palindrome is also Prime
+					else
+  				         echo Number $n is a Prime but its Palindrome is not a Prime
+
+					fi
+			else
+			echo Number is Not a Prime Number
         fi
 }
 
