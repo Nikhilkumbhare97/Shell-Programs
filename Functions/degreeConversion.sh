@@ -23,14 +23,14 @@ read -p "1. for Celsius to Farhenite 2. for Farhenite to Celsius" choose
 case $choose in
    1)
 		 read -p "Enter Temprature in Celsius :" degC
-         $( degFarhenite )
+         degFarhenite
          ;;
    2)
 	    read -p "Enter Temprature in Farhenite :" degF
-         $( degCelsius )
+         degCelsius
          ;;
 	*)
-			echo error
+		echo error
 			;;
 esac
 
