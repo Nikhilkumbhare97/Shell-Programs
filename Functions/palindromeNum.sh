@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 function palindrome(){
-	local number=$num
+	local number=$1
 	local reverse=0
 	while [ $num -gt 0 ]
 	do
