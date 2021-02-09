@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 function palindrome(){
-        local number=$PrimeNum
+        local number=$1
         local reverse=0
         while [ $PrimeNum -gt 0 ]
         do
